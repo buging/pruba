@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">GraffCity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Cerrar Sesión</string>
+    <string name="title_activity_login">Inicio Sesión</string>
+    <string name="title_activity_registro">Registro</string>
+
+    <!-- Strings related to login-->
+    <string name="prompt_email">Nombre artistico</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_email">El correo o usuario es invalido</string>
+    <string name="error_invalid_password">La password es muy corta</string>
+    <string name="error_incorrect_password">La password esta incorrecta</string>
+    <string name="error_field_required">Debe intoducir algún dato en el film</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <!-- registro -->
+    <string name="action_register">Registro</string>
+    <string name="registro_nombre">Nombre</string>
+    <string name="registro_apellido">Apellido</string>
+    <string name="registro_email">Correo</string>
+    <string name="registro_nickName">Nombre Artistico</string>
+    <string name="registro_password">Contraseña</string>
+    <string name="registro_con_password">Confirmar Contraseña</string>
+    <string name="action_registro_short">Registro</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_register">Registro</string>
+
+
+    <!-- upload graffiti -->
+    <string name="bt_publicar_graffiti">Publicar Graffiti</string>
+    <string name="title_activity_login2">Sign in</string>
+
+
+</resources>

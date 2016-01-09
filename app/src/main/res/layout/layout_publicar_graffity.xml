@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar android:id="@+id/publicar_graffiti_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScrollView">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setPicture"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:background="#000000"/>
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:id="@+id/et_nombre_graffiti"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/setPicture"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Nombre del graffity"
+                android:editable="false"
+                android:clickable="false" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:id="@+id/et_descripcion_graffiti"
+                android:layout_below="@+id/et_nombre_graffiti"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Descripción del graffity"
+                android:editable="false"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_descripcion_graffiti"
+                android:text="Seleccione ubicación del graffity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:id="@+id/tv_ubicacion" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/spinnerUbicacion"
+                android:layout_below="@+id/tv_ubicacion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Ubicación"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerUbicacion"
+                android:text="Seleccione autor del graffity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:id="@+id/tv_autor" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/spinnerAutor"
+                android:layout_below="@+id/tv_autor"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Ubicación"/>
+
+            <com.google.android.gms.maps.MapView
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/spinnerAutor"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/mapa_salvacion" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/mapa_salvacion"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorPrimary"
+                android:text="Publicar Graffity"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:id="@+id/uploadImage" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

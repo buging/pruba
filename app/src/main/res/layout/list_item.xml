@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <ImageView
+        android:id="@+id/foto_item"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="fotografia"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/nombre_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombres de graffitis"
+        android:layout_toRightOf="@+id/foto_item"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/direccion_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre_item"
+        android:layout_toRightOf="@+id/foto_item"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Dirección del graffity"/>
+
+    <RatingBar
+        android:id="@+id/valoracion_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/direccion_item"
+        android:layout_toRightOf="@+id/foto_item"
+        style="?android:attr/ratingBarStyleSmall"
+        android:isIndicator="true"
+        android:rating="3"/>
+
+</RelativeLayout>
